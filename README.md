@@ -23,11 +23,11 @@ If the optional time quantum is provided for a selected scheduler that doesn't r
 The input file will be a .csv containing a list of processes, at which CPU cycle they arrive, how many cycles they take to complete and an optional list of I/O times and how many cycles that I/O burst takes:
 
 ```
-"A",0,3\
-"B",2,6\
-,3,2\
-"C",4,4\
-"D",6,5\
+"A",0,3
+"B",2,6
+,3,2
+"C",4,4
+"D",6,5
 "E",8,2
 ```
 
@@ -37,10 +37,10 @@ Each line in the file will either begin with a " character indicating it is a pr
 The output file will look similar to the input file, but will have added the process start time, time spent in wait, finish time, turnaround time and normalized turnaround time (as a float with 2 decimal points) for each of the processes. Finally it will list the mean turnaround time and the mean normalized turnaround time (also as a float with 2 decimal points).
 
 ```
-"A",0,3,0,0,3,3,1.00\
-"C",4,4,6,2,10,6,1.50\
-"B",2,6,3,5,13,11,1.83\
-"D",6,5,13,7,18,12,2.40\
-"E",8,2,18,10,20,12,6.00\
+"A",0,3,0,0,3,3,1.00
+"C",4,4,6,2,10,6,1.50
+"B",2,6,3,5,13,11,1.83
+"D",6,5,13,7,18,12,2.40
+"E",8,2,18,10,20,12,6.00
 8.80,2.55
 ```
