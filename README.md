@@ -6,15 +6,11 @@ When the CPU cycle clock is equal to the arrival time for a process in the Arriv
 
 The program will implement schedulers such as:
 
-FF: First-Come-First-Served
-
-RR: Round Robin (with settable quantum)
-
-SP: Shortest Process Next
-
-SR: Shortest Remaining Time
-
-HR: Highest Response Ratio Next
+• FF: First-Come-First-Served
+• RR: Round Robin (with settable quantum)
+• SP: Shortest Process Next
+• SR: Shortest Remaining Time
+• HR: Highest Response Ratio Next
 
 The program will accept a switch -s which selects which scheduler to simulate, an optional time quantum -q and an input and output filename:
 ```./schsim -s FF -q 2 input.csv output.csv```
